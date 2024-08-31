@@ -5,7 +5,7 @@ const ModalClave = ({ onClose, onClaveCorrecta }) => {
   const [error, setError] = useState(false);
 
   const handleSubmit = () => {
-    if (inputValue === '0808') {
+    if (inputValue === '0219') {
       onClaveCorrecta();
     } else {
       setError(true);

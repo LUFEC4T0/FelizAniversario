@@ -111,8 +111,8 @@ const LineaTiempo = () => {
                     Cada fecha representa un dia muy especial de nuestra
                     relación.
                 </p>
-                <div className="relative flex flex-col md:flex-wrap  md:flex-row items-center justify-between w-full max-w-6xl">
-                    <div className="absolute bg-black h-full w-1 left-[49%] transform rounded-full md:w-full md:h-3 md:left-0 md:hidden"></div>
+                <div className="relative flex flex-col items-center justify-between w-full max-w-6xl">
+                    <div className="absolute bg-black h-full w-1 md:w-2 left-[49%] md:left-[35.8rem] transform rounded-full "></div>
 
                     {events.map((event, index) => (
                         <div
@@ -123,7 +123,7 @@ const LineaTiempo = () => {
                                 className="cursor-pointer flex items-center justify-center bg-gradient-to-r from-[#be9e80] to-[#d3b18d] rounded-full font-sora font-bold text-black text-center z-10 relative shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
                                 onClick={() => toggleEvent(index)}
                             >
-                                <span className="text-xs md:text-sm font-playfair text-white shadow-lg bg-black bg-opacity-70 px-5 py-3 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105">
+                                <span className="text-xs md:text-lg font-playfair text-white shadow-lg bg-black bg-opacity-7 px-5 py-3 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105">
                                     {event.date}
                                 </span>
                             </div>
